@@ -1,1 +1,182 @@
-<h1>Test</h1>
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Designer Pan</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./icon/logo.ico"></link>
+    <link rel="apple-touch-icon" href="./icon/logo.ico">
+
+    <link rel="stylesheet" type="text/css" href="./css/body.css">
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+</head>
+<body oncopy="return false">
+    <div class="bar">
+        <div class="container">
+            <a href="./index.html">
+                <img class="logo" src="./icon/logo.png">
+            </a>
+            <div class="progress">
+                <a href="#design"><p>DESIGN</p></a>
+                <a href="#animate"><p>ANIMATE</p></a>
+                <a href="#product"><p>PRODUCT</p></a>
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn"><img class="about" src="./icon/inf.svg"></button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="">ABOUT & CONTACT</a>
+                        <a href="">RESOURCE</a>
+                        <a href="">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="banner">
+        <img class="21:9" src="./img/home/banner.png">
+    </div>
+    <div class="design" id="design">
+        <div class="container">
+            <div class="designtitle">
+                <!-- <img src="./icon/design.svg"> -->
+                <p>DESIGN</p>
+            </div>
+            <ul>
+                <a href="./page/design/article1.html">
+                    <li>
+                        <img src="./img/home/ui.png">
+                        <div class="designtext">
+                            <span>Word Word Word Word Word Word Word</span>
+                            <p>UI & UX</p>
+                        </div>
+                    </li>
+                </a>
+                <a href="">
+                    <li>
+                        <img src="./img/home/ui.png">
+                        <div class="designtext">
+                            <span>Word Word Word Word Word Word Word</span>
+                            <p>UI & UX</p>
+                        </div>
+                    </li>
+                </a>
+                <a href="">
+                    <li>
+                        <img src="./img/home/ui.png">
+                        <div class="designtext">
+                            <span>Word Word Word Word Word Word Word</span>
+                            <p>UI & UX</p>
+                        </div>
+                    </li>
+                </a>
+                <a href="">
+                    <li>
+                        <img src="./img/home/ui.png">
+                        <div class="designtext">
+                            <span>Word Word Word Word Word Word Word</span>
+                            <p>UI & UX</p>
+                        </div>
+                    </li>
+                </a>
+                <a href="">
+                    <li>
+                        <img src="./img/home/ui.png">
+                        <div class="designtext">
+                            <span>Word Word Word Word Word Word Word</span>
+                            <p>UI & UX</p>
+                        </div>
+                    </li>
+                </a>
+            </ul>
+        </div>
+    </div>
+    <div class="animate" id="animate">
+        <div class="container">
+            <div class="animatetitle">
+                <!-- <img src="./icon/animate.svg"> -->
+                <p>ANIMATE</p>
+            </div>
+            <ul>
+                <a href="">
+                    <li>
+                        <div class="play">
+                            <button>
+                                <img src="./icon/play.svg">
+                            </button>
+                        </div>
+                        <img src="./img/home/film.png">
+                    </li>
+                </a>
+                <a href="">
+                    <li>
+                        <div class="play">
+                            <button>
+                                <img src="./icon/play.svg">
+                            </button>
+                        </div>
+                        <img src="./img/home/film.png">
+                    </li>
+                </a>
+                <a href="">
+                    <li>
+                        <div class="play">
+                            <button>
+                                <img src="./icon/play.svg">
+                            </button>
+                        </div>
+                        <img src="./img/home/film.png">
+                    </li>
+                </a>
+                <a href="">
+                    <li>
+                        <div class="play">
+                            <button>
+                                <img src="./icon/play.svg">
+                            </button>
+                        </div>
+                        <img src="./img/home/film.png">
+                    </li>
+                </a>
+                <a href="">
+                    <li>
+                        <div class="play">
+                            <button>
+                                <img src="./icon/play.svg">
+                            </button>
+                        </div>
+                        <img src="./img/home/film.png">
+                    </li>
+                </a>
+            </ul>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <p>Designer Pan  Original</p>
+            <!-- <p>Copyright ©️ 2021-2023 Pan</p>
+            <p>粤ICP备312423525号</p> -->
+        </div>
+    </div>
+    <script>
+        /* 点击按钮，下拉菜单在 显示/隐藏 之间切换 */
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+    
+    // 点击下拉菜单意外区域隐藏
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+    
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    </script>
+</body>
+</html>
